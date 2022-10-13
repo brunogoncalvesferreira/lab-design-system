@@ -12,10 +12,11 @@ module.exports = {
   features: {
     storyStoreV7: true,
   }, 
-  viteFInal: (config, { configType }) => {
-    if(configType ===  'PRODUTION') {
-      config.base = '/lab-design-system'
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/lab-design-system/'
     }
+
     return config
   }
 };
